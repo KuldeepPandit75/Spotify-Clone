@@ -139,6 +139,10 @@ a {
     width: fit-content;
 }
 
+.badge:hover{
+    transform: scale(1.08);
+}
+
 .main-content{
     margin-left: 0.5rem;
     padding: 0 1rem 0 1rem;
@@ -169,6 +173,12 @@ a {
     margin-right:1rem;
 }
 
+.funct{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .funct button{
     width: fit-content;
 }
@@ -182,6 +192,10 @@ a {
     padding:0.4rem 1rem;
 }
 
+.upgrade:hover{
+    transform: scale(1.08);
+}
+
 .install{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -190,6 +204,10 @@ a {
     font-size: 0.95rem;
     border-radius: 1rem;
     padding:0.4rem 1rem;
+}
+
+.install:hover{
+    transform: scale(1.08);
 }
 
 .install i{
@@ -204,6 +222,10 @@ a {
     font-size: 0.95rem;
     border-radius: 1rem;
     padding:0.4rem 1rem;
+}
+
+.profile:hover{
+    transform: scale(1.08);
 }
 
 .card{
@@ -326,16 +348,16 @@ a {
 .slider::-webkit-slider-runnable-track{
     background-color: #ddd;
     border-radius: 100px;
-    height: 0.2rem;
+    height: 0.15rem;
 }
 
 .slider::-webkit-slider-thumb{
     appearance: none;
-    height: 0.8rem;
-    width:0.8rem;
+    height: 0.6rem;
+    width:0.6rem;
     background-color: #1bd760;
     border-radius: 50%;
-    margin-top:-6px;
+    margin-top:-3.8px;
 }
 
 .time{
@@ -345,9 +367,18 @@ a {
 .cont1{
     height: 1rem;
     margin-right: 1.5rem;
+    opacity: 0.5;
+}
+
+.cont1:hover{
+    opacity: 1;
 }
 
 .cont2{
     height: 2rem;
     margin-right: 1.5rem;
+}
+
+.cont2:hover{
+    transform: scale(1.1);
 }
