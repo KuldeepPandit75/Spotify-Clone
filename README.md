@@ -1,3 +1,3 @@
 # Spotify Clone
 
-Cloning full spotify
+Cloning full spotify.
