@@ -8,18 +8,38 @@ body {
 
 .main{
     display: flex;
-    height: 100vh;
     padding: 0.5rem;
 }
 
-@media(max-width:1100px){
+@media(max-width:1000px){
     .sidebar{
-        width:220px;
+        width:70px;
+    }
+    .sidebar a{
+        display: none;
+    }
+    .icons i{
+        display: none;
+    }
+    .lib-box{
+        display: none;
+    }
+    .lib{
+        height: 45px;
+    }
+    .vol{
+        display: none;
+    }
+    .volume{
+        margin-left:-100px;
     }
 }
-@media(min-width:1100px){
+@media(min-width:1000px){
     .sidebar{
-        width:20vw;
+        width: 265px;
+    }
+    .lib{
+        flex:1;
     }
 }
 
@@ -27,13 +47,12 @@ body {
     background-color:#000;
     border-radius: 0.5rem;
     display: flex;
-    float:left;
     flex-direction: column;
 }
 
 .top-part{
     display: flex;
-    height: 90vh;
+    height: 88vh;
     width: 100vw;
 }
 
@@ -73,7 +92,7 @@ a {
 }
 
 .nav-option{
-    line-height: 2.5rem;
+    line-height: 2rem;
     opacity: 0.7;
     padding: 0.5rem 0.75rem;
 }
@@ -95,7 +114,6 @@ a {
 .lib{
     background-color: #121212;
     border-radius: 0.5rem;
-    flex:1;
     margin: 0.5rem 0;
     padding: 0.5rem 0.75rem;
 }
@@ -189,6 +207,10 @@ a {
     justify-content: center;
     align-items: center;
     margin-right:1rem;
+}
+
+.pagenav:hover{
+    transform: scale(1.2);
 }
 
 .funct{
@@ -365,7 +387,7 @@ a {
 .volume{
     width: 50%;
     display: flex;
-    margin-left: 1rem;
+    margin-left: 10px;
 }
 
 .slider::-webkit-slider-runnable-track{
@@ -376,11 +398,11 @@ a {
 
 .slider::-webkit-slider-thumb{
     appearance: none;
-    height: 0.2rem;
-    width:1%;
+    height: 0.6rem;
+    width:0.6rem;
     background-color: #1bd760;
-    border-radius: 5px;
-    padding-left: 10px;
+    border-radius: 50%;
+    margin-top: -3.8px;
 }
 
 .time{
@@ -404,4 +426,47 @@ a {
 
 .cont2:hover{
     transform: scale(1.1);
+}
+
+.settingIcon{
+    opacity: 0.5;
+}
+
+.settingIcon:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.music-text{
+    overflow: hidden;
+}
+
+.tiles{
+    display: flex;
+    height: 45px;
+    width: 48%;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition:background-color 0.2s ease 0s;
+}
+
+.tiles img{
+    border-radius: 5px 0 0 5px;
+}
+
+.tiles p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.recents{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.tiles:hover{
+    background-color: rgba(255, 255, 255, 0.185);
 }
