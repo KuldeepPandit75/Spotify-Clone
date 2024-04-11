@@ -11,7 +11,8 @@ arr = arr.concat(coll2Arr(document.querySelectorAll(".cont1")));
 arr = arr.concat(coll2Arr(document.querySelectorAll(".nav-option")));
 arr = arr.concat(coll2Arr(document.querySelectorAll(".upgrade")));
 arr = arr.concat(coll2Arr(document.querySelectorAll(".profile")));
-arr = arr.concat(coll2Arr(document.querySelectorAll(".cards")));
+arr = arr.concat(coll2Arr(document.querySelectorAll(".card")));
+arr = arr.concat(coll2Arr(document.querySelectorAll(".tiles")));
 arr = arr.concat(coll2Arr(document.querySelectorAll(".settingIcon")));
 
 
